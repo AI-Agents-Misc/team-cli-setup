@@ -5,12 +5,12 @@ Modern CLI tools that make terminal life better.
 ## One-Line Install
 
 ```bash
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/YOUR_ORG/team-cli-setup/main/install.sh)"
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/AI-Agents-Misc/team-cli-setup/main/install.sh)"
 ```
 
 Or clone and run:
 ```bash
-git clone https://github.com/YOUR_ORG/team-cli-setup.git
+git clone https://github.com/AI-Agents-Misc/team-cli-setup.git
 cd team-cli-setup
 ./install.sh
 ```
