@@ -73,6 +73,15 @@ dust                # Disk usage visualization
 ps                  # Better process list
 ```
 
+### Claude Code Cleanup
+
+The install script also adds automatic cleanup for Claude Code processes:
+
+- **On shell exit**: Kills Claude when you close a terminal tab (`setopt HUP`)
+- **On shell startup**: Kills any orphaned Claude processes (detached from terminals)
+
+This prevents the common issue of Claude processes accumulating in the background and eating up RAM.
+
 ## Uninstall
 
 Remove the "Modern CLI Tools" section from your `~/.zshrc` and run:

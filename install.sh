@@ -61,6 +61,10 @@ eval "$(zoxide init zsh)"
 # fzf shell integration (Ctrl+R for history, Ctrl+T for files)
 source <(fzf --zsh)
 
+# Claude Code cleanup (prevents orphaned processes eating RAM)
+setopt HUP  # Kill child processes when shell exits
+ps -eo pid,tty,command 2>/dev/null | grep "claude" | grep "??" | awk '{print $1}' | xargs kill -9 2>/dev/null
+
 # === End Modern CLI Tools ===
 EOF
 fi
